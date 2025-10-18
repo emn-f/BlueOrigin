@@ -34,7 +34,7 @@ body {
 
 .nav {
     display: flex;
-    gap: 1.5rem;
+    gap: 3rem
 }
 
 .nav a {
@@ -42,6 +42,16 @@ body {
     text-decoration: none;
     font-weight: 500;
     white-space: nowrap;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.nav_active {
+
+    border-bottom: 3px solid #FFF;
+    padding-bottom: 0.5rem;
+
+    display: inline-block;
 }
 
 .btn_compra {
@@ -59,6 +69,8 @@ body {
     display: flex;
     align-items: center;
     gap: 1.5rem;
+    justify-content: space-between;
+
 }
 
 .hamburger-menu {
@@ -69,7 +81,7 @@ body {
 }
 
 .hamburger-menu img {
-    height: 1.5rem;
+    height: 2.2rem;
     width: auto;
     display: block;
 }
@@ -80,16 +92,22 @@ body {
     background-image: url("../assets/images/bg_banner 1.png");
     background-size: cover;
     background-position: center;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+}
+
+.banner-content {
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    margin: 0 auto;
 }
-
-.banner-content {}
 
 .banner-title {
     font-size: 3rem;
@@ -111,8 +129,6 @@ body {
 }
 
 .indicators {
-    position: absolute;
-    bottom: 2rem;
     display: flex;
     gap: 0.75rem;
 }
@@ -130,19 +146,16 @@ body {
 
 .section_conteudo {
     width: 80rem;
-    padding: 2rem 2rem 0 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: .1rem;
     margin: 0 auto;
 }
 
 .feature-block {
     width: 100%;
     display: flex;
-    align-items: center;
-    gap: 3rem;
+    align-items: stretch;
 }
 
 .feature-block.reverse {
@@ -150,7 +163,11 @@ body {
 }
 
 .text-column {
-    flex: 1;
+    flex: 0 0 540px;
+    padding: 3em 2em 1em 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .image-column {
@@ -159,6 +176,8 @@ body {
 
 .image-column img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
 }
 
@@ -284,8 +303,7 @@ body {
 }
 
 .footer {
-    width: 1280px;
-    padding: 0 0 90px 0;
+    width: 1278px;
     background-color: #202020;
     box-sizing: border-box;
     display: flex;
@@ -303,8 +321,8 @@ body {
     flex: 0 0 440px;
     display: flex;
     flex-direction: column;
-    padding-left: 40px;
-    padding-right: 20px;
+    padding-left: 29px;
+    padding-right: 17px;
     box-sizing: border-box;
 }
 
@@ -362,7 +380,7 @@ body {
 }
 
 .footer-subscribe {
-    flex: 0 0 420px;
+    flex: 33em;
     background-color: #383838;
     padding: 20px 40px 32px 32px;
     box-sizing: border-box;
